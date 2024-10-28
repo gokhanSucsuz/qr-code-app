@@ -34,6 +34,7 @@ const QrCodeGenerator = () => {
 		setUrl(mailToLink)
 	}
 	const handleDownload = (type: "png" | "svg") => {
+		console.log(logoFile, qrType)
 		const qrCodeElement = document.getElementById("qr-code");
 		if (qrCodeElement) {
 			if (type === "png") {
